@@ -1,10 +1,11 @@
-Hello World...
-It's my first devops project
+pipeline {
+  agent any
 
-now i am checking my git branch
-i have created new branch called feature1
-
-
-
-
-Jenkins CI test
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo Hello DevOps'
+      }
+    }
+  }
+}
